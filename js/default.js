@@ -1,6 +1,6 @@
-var number = Math.floor(Math.random()*5);
+var number = Math.floor(Math.random()*3);
 
-var answer = parseInt(window.prompt('数当てゲーム。0~4の数字を入力してください！'));
+var answer = parseInt(window.prompt('数当てゲーム。0~2の数字を入力してください！'));
 
 var message;
 if(answer == number){
@@ -10,7 +10,7 @@ if(answer == number){
 }else if(number < answer){
   message = '残念！もっと小さいです';
 }else{
-  message = '0~4の数字を入力してください';
+  message = '0~2の数字を入力してください';
 }
 
 document.getElementById('choice').textContent = message;
