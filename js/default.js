@@ -1,6 +1,8 @@
 
 var number = Math.floor(Math.random()*5);
-  
+
+while()
+{
 var answer = parseInt(window.prompt('数当てゲーム。0~4の数字を入力してください！'));
 
 var message;
@@ -13,5 +15,5 @@ if(answer == number){
 }else{
   message = '0~4の数字を入力してください';
 }
-
+}
 document.getElementById('choice').textContent = message;
